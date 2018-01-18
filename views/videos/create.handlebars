@@ -1,0 +1,14 @@
+
+<div class="contents-container">
+  Save a video
+  {{#if error}}
+    <span class="error">{{error}}</span>
+  {{/if}}
+  <form method="post" action="/videos">
+    <input id="title-input" name="title" value="{{video.title}}">
+    <textarea id="description-input" name="description">{{video.description}}</textarea>
+    <input id="url-input" name="url" value="{{video.url}}">
+
+    <input id="video-submit" type="submit">
+  </form>
+</div>
